@@ -1,39 +1,228 @@
-@import url('https://fonts.googleapis.com/css?family=Barlow:Black,Medium&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Barlow&display=swap');
 #main{
     background-color: white;
     display: grid;
-    grid-template-columns:100px auto 100px;
-    grid-column-gap: 10px;
-    width: 100%;
+    grid-template-columns:165px auto 165px;
+    overflow-x: hidden;
 }
 .row-1{
     display: flex;
     flex-direction: row;
-
+    width: auto;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+.row-1 #TM-logo{
+    width: 100px;
+    height:100px;
+    left:2909px;
+    top:1042px;
+    border: 1px solid #000000;
 }
 .row-1 .Button2{
-    display: flex;
-    justify-content: center;
-    border-radius: 5px;
-    margin: 0 0 0 auto;
+    border-radius: 10px;
     background-color: #E8EFF2;
-    border-color: #E8EFF2;
+    height: 100px;
+    border: 2px solid #E8EFF2;
+    color: #000;
+    font-family: Barlow;
+    text-transform: uppercase;
+    font-weight:bold;
 }
-.main-title{
-    font-family: "Barlow Black", sans-serif;
+.row-1 .Button2:hover{
+    background-color: #162542;
+    border: 2px solid #162542;
+    color: #FFF;
+    cursor: pointer;
+}
+h1{
+    font-family: Barlow;
     text-transform:uppercase;
     font-size: 56px;
+    color: #162542;
+    font-weight: 900;
+    line-height: 56px;
+}
+p{
+    font-family:  Barlow;
+    font-size: 26px;
+    color: #7B8BAD;
+}
+h2{
+    font-family:  Barlow;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: #162542;
+    font-weight: 700;
+}
+h3{
+    font-family:  Barlow;
+    font-size: 28px;
     color: #162542;
 }
 .col-1{
     display: flex;
     align-self: center;
     justify-self: center;
-    margin-left:-50px;
+}
+.col-1 #grey-section-on-left{
+    position: absolute;
+    width:255px;
+    height: 236px;
+    left: -120px;
+    top: 950px;
+}
+.col-2{
+    display: flex;
+    flex-direction: column;
 }
 .col-3{
     display: flex;
-    align-self: center;
-    justify-self: center;
-    margin-right:-250px;
+    position: relative;
+}
+.col-3 #grey-section-on-right{
+    position: absolute;
+    width:255px;
+    height: 240px;
+    right: -120px;
+    margin-left: 20px;
+    top: 196px;
+}
+
+.compatible #compatible-image{
+    background-color:#F16718;
+    padding: 5px;
+    border-radius: 5px;
+}
+.bluetooth #bluetooth-image{
+    background-color:#F16718;
+    padding: 5px;
+    border-radius: 5px;
+}
+.battery #battery-image{
+    background-color:#F16718;
+    padding: 5px;
+    border-radius: 5px;
+}
+.light #light-image{
+    background-color:#F16718;
+    padding: 5px;
+    border-radius: 5px;
+}
+.row-2{
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    /* width: auto; */
+}
+.row-2 .main-title{
+    width: 45%;
+    height: 312px;
+}
+.row-2 .first-keyboard-container{
+    display: flex;
+    justify-content: end;
+    border-radius: 10px;
+    width: 50%;
+    height: 480px;
+}
+.row-2 .first-keyboard-container #first-keyboard-image{
+    border-radius: 10px;
+    width: 100%;
+    height: 480px;
+}
+.row-3{
+    display: flex;
+    margin-bottom: 90px;
+    width: auto;
+    justify-content: space-between;
+}
+.row-3 #phone-and-keyboard{
+    width: 25%;
+    height: auto;
+    margin-top: 70px;
+    margin-right: 40px;
+    border-radius: 10px;
+    background-image: linear-gradient(rgba(230, 93, 15, 0.9), rgba(248, 91, 0, 0.5)), url("assets/desktop/image-phone-and-keyboard.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.row-3 #glass-and-keyboard{
+    width: 25%;
+    height: 480px;
+    margin-top: 70px;
+    margin-right: 90px;
+    border-radius: 10px;
+}
+.row-3 .sub-title{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    align-items: center;
+}
+.row-3 .sub-title #description{
+    font-family:  Barlow;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    color: #7B8BAD;
+}
+.row-4{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.row-4 .sub-title-2{
+    text-transform: uppercase;
+}
+.row-4 .compatible{
+    padding: 10px;
+}
+.row-4 .bluetooth{
+    padding: 10px;
+}
+.row-4 .battery{
+    padding: 10px;
+}
+.row-4 .light{
+    padding: 10px;
+}
+.order-release-section{
+    display: flex;
+    flex-direction: row;
+}
+.order-release-section .Button1{
+    background-color:#F16718;
+    border-radius: 10px;
+    height: 100px;
+    border: 2px solid #F16718;
+    font-family: Barlow;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.order-release-section .Button1:hover{
+    background-color: #FF9B62;
+    border: 2px solid #FF9B62;
+    cursor: pointer;
+}
+.order-release-section #release-date{
+    display: flex;
+    margin: auto;
+    text-transform: uppercase;
+    color: #7B8BAD;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    margin: auto;
+    padding: 30px;
 }
