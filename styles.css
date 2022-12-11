@@ -25,7 +25,7 @@
 .row-1 .Button2{
     border-radius: 10px;
     background-color: #E8EFF2;
-    height: auto;
+    height: 5vh;
     width: 20%;
     border: 2px solid #E8EFF2;
     color: #000;
@@ -65,7 +65,7 @@ h3{
     height: 136px;
     margin-right: 20px;
     left: -20px;
-    top: 710px; 
+    top: 930px; 
 }
 .col-2{
     display: flex;
@@ -91,6 +91,7 @@ h3{
 .row-2{
     display: flex;
     width: 100%;
+    height: 100%;
     justify-content: space-between;
 }
 .row-2 .main-title{
@@ -99,7 +100,7 @@ h3{
     position: relative;
     width: 50%;
     height: auto;
-    margin: 0px 30px 30px 0px;
+    margin: auto;
     padding: 10px;
 }
 .row-2 .main-title h1{
@@ -123,7 +124,7 @@ h3{
 .order-release-section .Button1{
     background-color:#F16718;
     border-radius: 10px;
-    height: auto;
+    height: 5vh;
     width: 50%;
     border: 2px solid #F16718;
     font-family: Barlow;
@@ -154,7 +155,7 @@ h3{
     display: flex;
     border-radius: 30px;
     width: 50%;
-    height: auto;
+    height: 50vh;
     background-image: url("assets/desktop/image-keyboard.jpg");
     background-size: cover;
     background-position: center;
@@ -170,7 +171,7 @@ h3{
 .row-3 .two-keyboards{
     display: flex;
     width:70%;
-    height: 140%;
+    height: 50vh;
     padding: 10px;
 }
 .row-3 #phone-and-keyboard{
