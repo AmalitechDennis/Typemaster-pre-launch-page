@@ -1,32 +1,38 @@
 @import url('https://fonts.googleapis.com/css?family=Barlow&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Barlow;
+}
+
 #main{
     background-color: white;
-    display: grid;
-    grid-template-columns:165px auto 165px;
-    overflow-x: hidden; 
+    display: flex;
+    width: 100%;
 }
 
 .row-1{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 10px 10px 70px 10px;
+    margin: 10px 10px 70px 10px;
 }
 .row-1 #TM-logo{
-    width: 100px;
-    height:100px;
+    width: 5%;
+    height:auto;
 }
 .row-1 .Button2{
     border-radius: 10px;
     background-color: #E8EFF2;
-    height: 100px;
-    width: 300px;
+    height: auto;
+    width: 20%;
     border: 2px solid #E8EFF2;
     color: #000;
     font-family: Barlow;
     text-transform: uppercase;
-    font-weight:bold;
-    font-size: larger;
+    font-weight:700;
+    font-size: bold;
 }
 .row-1 .Button2:hover{
     background-color: #162542;
@@ -34,99 +40,121 @@
     color: #FFF;
     cursor: pointer;
 }
-h1{
-    font-family: Barlow;
-    text-transform:uppercase;
-    font-size: 56px;
-    color: #162542;
-    font-weight: 900;
-    line-height: 56px;
-}
 p{
     font-family:  Barlow;
-    font-size: 26px;
+    font-size: 16px;
     color: #7B8BAD;
 }
 h2{
-    font-family:  Barlow;
-    font-size: 36px;
+    font-size: 26px;
     text-transform: uppercase;
-    color: #162542;
-    font-weight: 700;
 }
 h3{
     font-family:  Barlow;
-    font-size: 28px;
+    font-size: 24px;
     color: #162542;
 }
 .col-1{
+    position: relative;
     display: flex;
-    align-self: center;
-    justify-self: center;
+    width: 10%;
 }
 .col-1 #grey-section-on-left{
     position: absolute;
-    width:255px;
-    height: 236px;
-    left: -120px;
-    top: 950px;
+    width:100%;
+    height: 136px;
+    margin-right: 20px;
+    left: -20px;
+    top: 710px; 
 }
 .col-2{
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 .col-3{
     display: flex;
     position: relative;
+    overflow: hidden;
+    width: 10%;
+    
 }
 .col-3 #grey-section-on-right{
     position: absolute;
-    width:255px;
-    height: 240px;
-    right: -120px;
-    margin-left: 20px;
-    top: 196px;
-}
-
-.compatible #compatible-image{
-    background-color:#F16718;
-    padding: 5px;
-    border-radius: 5px;
-}
-.bluetooth #bluetooth-image{
-    background-color:#F16718;
-    padding: 5px;
-    border-radius: 5px;
-}
-.battery #battery-image{
-    background-color:#F16718;
-    padding: 5px;
-    border-radius: 5px;
-}
-.light #light-image{
-    background-color:#F16718;
-    padding: 5px;
-    border-radius: 5px;
+    width:100%;
+    height: 140px;
+    right: -20px;
+    top: 122px;
+    left:30px;
+    z-index: 1;
 }
 .row-2{
     display: flex;
+    width: 100%;
     justify-content: space-between;
 }
 .row-2 .main-title{
-    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 50%;
     height: auto;
     margin: 0px 30px 30px 0px;
+    padding: 10px;
 }
-.row-2 .description{
+.row-2 .main-title h1{
+    font-family: Barlow;
+    color: #162542;
+    text-transform:uppercase;
+    font-size: 56px;
+    font-weight: 900;
+}
+.row-2 .main-title .description{
     font-family:  Barlow;
-    font-size: 28px;
+    font-size: 18px;
     color: #7B8BAD;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.order-release-section{
+    display: flex;
+    flex-direction: row;
+}
+.order-release-section .Button1{
+    background-color:#F16718;
+    border-radius: 10px;
+    height: auto;
+    width: 50%;
+    border: 2px solid #F16718;
+    font-family: Barlow;
+    font-size: bold;
+    line-height: 26px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 10px;
+}
+.order-release-section .Button1:hover{
+    background-color: #FF9B62;
+    border: 2px solid #FF9B62;
+    cursor: pointer;
+}
+.order-release-section #release-date{
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    color: #7B8BAD;
+    align-items: center;
+    width: 50%;
+    font-size: bold;
+    font-weight: 700;
+    line-height: 26px;
 }
 .row-2 .first-keyboard-container{
     display: flex;
     border-radius: 30px;
-    width: 1080px;
-    height: 960px;
+    width: 50%;
+    height: auto;
     background-image: url("assets/desktop/image-keyboard.jpg");
     background-size: cover;
     background-position: center;
@@ -134,50 +162,64 @@ h3{
 .row-3{
     display: flex;
     margin-bottom: 90px;
-    width: auto;
+    width: 100%;
     justify-content: space-between;
+    height: 100%;
+    margin-top: 10px;
 }
 .row-3 .two-keyboards{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    width:70%;
+    height: 140%;
+    padding: 10px;
 }
 .row-3 #phone-and-keyboard{
-    width: 510px;
-    height: 960px;
-    margin-top: 70px;
-    margin-right: 40px;
-    border-radius: 30px;
+    display: flex;
+    width: 30%;
+    height:  auto;
+    border-radius: 10px;
     background-image: linear-gradient(rgba(230, 93, 15, 0.9), rgba(248, 91, 0, 0.5)), url("assets/desktop/image-phone-and-keyboard.jpg");
     background-size: cover;
     background-position: center;
 }
 .row-3 #glass-and-keyboard{
-    width: 887px;
-    height: 960px;
-    margin-top: 70px;
-    margin-right: 90px;
-    border-radius: 30px;
+    display: flex;
+    width: 70%;
+    height: auto;
+    margin-left: 10px;
+    border-radius: 10px;
     background-image: url("assets/desktop/image-glass-and-keyboard.jpg");
+    background-size: cover;
+    background-position: center;
 }
 .row-3 .sub-title{
     display: flex;
     flex-direction: column;
-    width: 25%;
-    align-items: center;
+    width: 30%;
+    height:50%;
+    padding: 10px;
+    margin: auto;
 }
-.row-3 .sub-title #description{
+.row-3 .sub-title h2{
+    font-family:  Barlow;
+    color: #162542;
+    font-weight: 700;
+    font-size: 26px;
+    text-transform: uppercase;
+}
+.row-3 .sub-title .description{
     font-family:  Barlow;
     font-size: 16px;
     font-weight: 500;
     line-height: 26px;
     color: #7B8BAD;
+    padding: 10px;
 }
 .row-4{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 50px;
+    margin-top: 50px;
+    font-size: 24px;
 }
 .row-4 .compatible-bluetooth{
     display: flex;
@@ -191,52 +233,30 @@ h3{
     justify-content: space-between;
     margin-bottom: 50px;
 }
+.row-4 .features{
+    padding: 10px;
+}
+.row-4 .svg-image{
+    background-color:#F16718;
+    padding: 5px;
+    width:10%;
+    height:10%;
+}
 .row-4 .sub-title-2{
     text-transform: uppercase;
+    font-size: 24px;
+    height:30%;
+    padding-top: 20px;
 }
-.row-4 .compatible{
-    padding: 10px;
-}
-.row-4 .bluetooth{
-    padding: 10px;
-}
-.row-4 .battery{
-    padding: 10px;
-}
-.row-4 .light{
-    padding: 10px;
-}
-.order-release-section{
+.row-4 .description{
     display: flex;
-    flex-direction: row;
-}
-.order-release-section .Button1{
-    background-color:#F16718;
-    border-radius: 10px;
-    height: 100px;
-    width: 300px;
-    border: 2px solid #F16718;
-    font-family: Barlow;
-    font-size: larger;
+    font-family:  Barlow;
+    font-size: 16px;
+    font-weight: 500;
     line-height: 26px;
-    color: #FFFFFF;
-    text-transform: uppercase;
-    font-weight: 700;
-}
-.order-release-section .Button1:hover{
-    background-color: #FF9B62;
-    border: 2px solid #FF9B62;
-    cursor: pointer;
-}
-.order-release-section #release-date{
-    display: flex;
-    margin: auto;
-    text-transform: uppercase;
     color: #7B8BAD;
-    align-items: center;
-    font-size: larger;
-    font-weight: 700;
-    line-height: 26px;
+    height:50%;
+    padding-top: 20px;
 }
 .footer{
     display: flex;
@@ -245,16 +265,19 @@ h3{
     width: 100%;
     margin: auto;
     font-family:  Barlow;
-    font-size: 26px;
+    font-size: 16px;
     color: #7B8BAD;
     text-align: center;
 }
-@media only screen and (max-width:768px) {
+@media screen and (max-width:768px) {
     #main{
-        display: block;
-        width: 768px;
-        overflow-x: hidden;
-        border: 2px solid;
+        overflow: hidden; 
+    }
+    .col-1{
+        width:0%;
+    }
+    .col-3{
+        width:0%;
     }
     .col-1 #grey-section-on-left{
        display: none;
@@ -262,79 +285,58 @@ h3{
     .col-3 #grey-section-on-right{
         display: none;
     }
-    .row-1{
-        margin-bottom: 70px;
-    }
-    .row-1 #TM-logo{
-        width: 40px;
-        height:40px;
-    }
-    .row-1 .Button2{
-        height: 48px;
-        width: 151px;
-        font-size: medium;
-    }
-    .row-2{
-        display: flex;
-        justify-content: space-between; 
-    }
-    .row-2 .Button1{
-        height: 48px;
-        width: 151px;
-        font-size: medium;
-    }
-    .row-3 .two-keyboards{
-        display: flex;
-        flex-direction: row;
+    .col-2{
         width: 100%;
+        padding: 20px;
+    }
+    .row-2 .main-title h1{
+        font-size: 48px;
     }
     .row-2 .first-keyboard-container{
-        width: 478px;
-        height: 425px;
         background-image: url("assets/tablet/image-keyboard.jpg");
-        margin-right: -60px;
+        margin-right: -80px;
     }
     .row-3{
         display: flex;
-        flex-wrap: wrap;
-        margin-bottom: 90px;
+        flex-direction: column;
+        margin-bottom: 10px;
         width: 100%;
+        height:auto;
+    }
+    .row-3 .two-keyboards{
+        flex-direction: row;
+        width: 100%;
+        height: 30vh;
+        padding-right: 0px;
+        padding-left: 0px;
     }
     .row-3 .sub-title{
-        display: flex;
         flex-direction: row;
         width:100%;
     }
+    .row-3 .sub-title .description{
+        margin: auto;
+    }
     .row-4{
-        display: flex;
-        flex-wrap: wrap; 
+        flex-wrap: wrap;
     }
     .row-4 .compatible-bluetooth{
         display: flex;
         flex-direction: row;
     }
     .row-4 .battery-light{
-        display: flex;
         flex-direction: row;
     }
     .row-3 #phone-and-keyboard{
-        width: 228px;
-        height: 640px;
         background-image: linear-gradient(rgba(230, 93, 15, 0.9), rgba(248, 91, 0, 0.5)), url("assets/tablet/image-phone-and-keyboard.jpg");
     }
     .row-3 #glass-and-keyboard{
-        width: 658px;
-        height: 640px;
-        margin-right: 0px;
         background-image: url("assets/tablet/image-glass-and-keyboard.jpg");
     }
 }
-@media only screen and (max-width:480px) {
+@media screen and (max-width:480px) {
     #main{
-        display: block;
-        width: 375px; 
         overflow-x: hidden;
-        border: 2px solid;
     }
     .col-1 #grey-section-on-left{
         display: none;
@@ -346,41 +348,67 @@ h3{
         margin-bottom: 70px;
     }
     .row-1 #TM-logo{
-        width: 40px;
-        height:40px;
+        width: 10%;
+        height:auto;
     }
     .row-1 .Button2{
-        height: 48px;
-        width: 151px;
-        font-size: medium;
+        height: auto;
+        width: 40%;
     }
     .row-2{
-        display: block;
-        /* margin: 20px; */
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    .row-2 .main-title{
+        width: 100%;
+        height: auto;
     }
     .row-2 .Button1{
-        height: 48px;
-        width: 151px;
-        font-size: medium;
+        height: auto;
+        width: 50%;
     }
     .row-2 .first-keyboard-container{
         background-image: url("assets/mobile/image-keyboard.jpg");
-        width: 372px;
-        height: 331px;
-        float: right;
+        width: 120%;
+        height: 30vh;
+        border-radius: 20px 0px 0px 20px;
     }
     .row-3{
         display: flex;
-        flex-wrap: wrap;
-        margin-bottom: 90px;
+        margin-bottom: 0px;
     }
     .row-3 .two-keyboards{
         display: flex;
         flex-direction: row;
-        width: 375px;
+        width: 140%;
+        margin-right: -20px;
     }
     .row-3 .sub-title{
-        width:375px;
+        width:100%;
+        text-align: center;
+    }
+    .row-3 #phone-and-keyboard{
+        width: 40%;
+        height: 100%;
+        background-image: linear-gradient(rgba(230, 93, 15, 0.9), rgba(248, 91, 0, 0.5)), url("assets/mobile/image-phone-and-keyboard.jpg");
+        margin-left: -30px;
+        border-radius: 0px 20px 20px 0px;
+    }
+    .row-3 #glass-and-keyboard{
+        height: 100%;
+        width: 90%;
+        margin-left: 40px;
+        border-radius: 20px 0px 0px 20px;
+        background-image: url("assets/mobile/image-glass-and-keyboard.jpg");
+    }
+    .row-3 .sub-title{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        align-items: center;
     }
     .row-4{
         display: flex;
@@ -389,24 +417,6 @@ h3{
         text-align: center;
         margin-bottom: 50px;
     }
-    .row-3 #phone-and-keyboard{
-        width: 129px;
-        height: 386px;
-        background-image: linear-gradient(rgba(230, 93, 15, 0.9), rgba(248, 91, 0, 0.5)), url("assets/mobile/image-phone-and-keyboard.jpg");
-        margin-left: -70px;
-    }
-    .row-3 #glass-and-keyboard{
-        width: 220px;
-        height: 386px;
-        background-image: url("assets/mobile/image-glass-and-keyboard.jpg");
-        margin-right: 10px;
-    }
-    .row-3 .sub-title{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-    }
     .row-4 .compatible-bluetooth{
         display: flex;
         flex-direction: column;
@@ -414,7 +424,5 @@ h3{
     .row-4 .battery-light{
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        margin-bottom: 50px;
     }
 }
