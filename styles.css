@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Barlow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500;900&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -11,7 +11,6 @@
     display: flex;
     width: 100%;
 }
-
 .row-1{
     display: flex;
     flex-direction: row;
@@ -20,30 +19,25 @@
 }
 .row-1 #TM-logo{
     width: 5%;
-    height:auto;
+    height:9vh;
 }
 .row-1 .Button2{
     border-radius: 10px;
     background-color: #E8EFF2;
-    height: 5vh;
+    height: 9vh;
     width: 20%;
     border: 2px solid #E8EFF2;
-    color: #000;
+    color: #162542;
     font-family: Barlow;
     text-transform: uppercase;
-    font-weight:700;
-    font-size: bold;
+    font-weight:500;
+    font-size: 2.5vh;
 }
 .row-1 .Button2:hover{
     background-color: #162542;
     border: 2px solid #162542;
     color: #FFF;
     cursor: pointer;
-}
-p{
-    font-family:  Barlow;
-    font-size: 16px;
-    color: #7B8BAD;
 }
 h2{
     font-size: 26px;
@@ -65,7 +59,7 @@ h3{
     height: 136px;
     margin-right: 20px;
     left: -20px;
-    top: 930px; 
+    top: 136vh; 
 }
 .col-2{
     display: flex;
@@ -84,7 +78,7 @@ h3{
     width:100%;
     height: 140px;
     right: -20px;
-    top: 122px;
+    top: 18.2vh;
     left:30px;
     z-index: 1;
 }
@@ -101,18 +95,22 @@ h3{
     width: 50%;
     height: auto;
     margin: auto;
+    margin-right: 10px;
     padding: 10px;
+    padding-left: 0px;
+    padding-right: 20px;
 }
-.row-2 .main-title h1{
+.row-2 .main-title .header{
     font-family: Barlow;
     color: #162542;
     text-transform:uppercase;
-    font-size: 56px;
-    font-weight: 900;
+    font-size: 9.2vh;
+    font-weight: 900px;
 }
 .row-2 .main-title .description{
     font-family:  Barlow;
-    font-size: 18px;
+    font-size: /*18px*/3.5vh;
+    font-weight: 500;
     color: #7B8BAD;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -120,20 +118,21 @@ h3{
 .order-release-section{
     display: flex;
     flex-direction: row;
+    height:9vh;
+    margin-top: 30px;
 }
 .order-release-section .Button1{
     background-color:#F16718;
     border-radius: 10px;
-    height: 5vh;
-    width: 50%;
+    height: auto;
+    width: 40%;
     border: 2px solid #F16718;
     font-family: Barlow;
-    font-size: bold;
+    font-size: 2.5vh;
     line-height: 26px;
     color: #FFFFFF;
     text-transform: uppercase;
-    font-weight: 700;
-    padding: 10px;
+    font-weight: 500;
 }
 .order-release-section .Button1:hover{
     background-color: #FF9B62;
@@ -147,48 +146,49 @@ h3{
     color: #7B8BAD;
     align-items: center;
     width: 50%;
-    font-size: bold;
-    font-weight: 700;
+    font-size: 2.5vh;
+    font-weight: 500;
     line-height: 26px;
 }
 .row-2 .first-keyboard-container{
     display: flex;
     border-radius: 30px;
     width: 50%;
-    height: 50vh;
+    height: 70vh;
     background-image: url("assets/desktop/image-keyboard.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: left;
 }
 .row-3{
     display: flex;
     margin-bottom: 90px;
     width: 100%;
     justify-content: space-between;
-    height: 100%;
-    margin-top: 10px;
+    height: auto;
+    margin-top: 40px;
 }
 .row-3 .two-keyboards{
     display: flex;
     width:70%;
-    height: 50vh;
+    height: 60vh;
     padding: 10px;
 }
 .row-3 #phone-and-keyboard{
     display: flex;
-    width: 30%;
+    width: 40%;
     height:  auto;
-    border-radius: 10px;
+    border-radius: 20px;
     background-image: linear-gradient(rgba(230, 93, 15, 0.9), rgba(248, 91, 0, 0.5)), url("assets/desktop/image-phone-and-keyboard.jpg");
     background-size: cover;
     background-position: center;
+    margin-right: 30px;
 }
 .row-3 #glass-and-keyboard{
     display: flex;
-    width: 70%;
+    width: 60%;
     height: auto;
     margin-left: 10px;
-    border-radius: 10px;
+    border-radius: 20px;
     background-image: url("assets/desktop/image-glass-and-keyboard.jpg");
     background-size: cover;
     background-position: center;
@@ -196,7 +196,7 @@ h3{
 .row-3 .sub-title{
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 20%;
     height:50%;
     padding: 10px;
     margin: auto;
@@ -205,12 +205,13 @@ h3{
     font-family:  Barlow;
     color: #162542;
     font-weight: 700;
-    font-size: 26px;
+    font-size: /*26px*/4vh;
     text-transform: uppercase;
+    padding: 10px;
 }
 .row-3 .sub-title .description{
     font-family:  Barlow;
-    font-size: 16px;
+    font-size: /*16px*/2vh;
     font-weight: 500;
     line-height: 26px;
     color: #7B8BAD;
@@ -220,44 +221,50 @@ h3{
     display: flex;
     flex-direction: row;
     margin-top: 50px;
-    font-size: 24px;
+    margin-bottom: 50px;
 }
 .row-4 .compatible-bluetooth{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     margin-bottom: 50px;
 }
 .row-4 .battery-light{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 50px;
 }
 .row-4 .features{
     padding: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid;
 }
 .row-4 .svg-image{
+    display: flex;
     background-color:#F16718;
-    padding: 5px;
-    width:10%;
-    height:10%;
+    border-radius: 9px;
+    width:20%;
+    height:7vh;
+}
+.row-4 .svg-image .svg--image{
+    width: 40%;
+    margin: auto;
 }
 .row-4 .sub-title-2{
     text-transform: uppercase;
-    font-size: 24px;
-    height:30%;
+    font-size: 3vh;
     padding-top: 20px;
 }
 .row-4 .description{
     display: flex;
     font-family:  Barlow;
-    font-size: 16px;
+    font-size: /*16px 2vh*/ 120%;
     font-weight: 500;
     line-height: 26px;
     color: #7B8BAD;
-    height:50%;
     padding-top: 20px;
+    padding-right: 10px;
+    border: 2px solid;
 }
 .footer{
     display: flex;
@@ -266,11 +273,11 @@ h3{
     width: 100%;
     margin: auto;
     font-family:  Barlow;
-    font-size: 16px;
+    font-size: 1.7vh;
     color: #7B8BAD;
     text-align: center;
 }
-@media screen and (max-width:768px) {
+@media screen and (max-width:1024px) {
     #main{
         overflow: hidden; 
     }
@@ -290,12 +297,44 @@ h3{
         width: 100%;
         padding: 20px;
     }
-    .row-2 .main-title h1{
-        font-size: 48px;
+    .row-1{
+        height: 6vh;
+    }
+    .row-1 #TM-logo{
+        width: 10%;
+        height:auto;
+    }
+    .row-1 .Button2{
+        font-weight:600;
+        font-size: 1.3vh;
+        height: auto;
+    }
+    .row-2 .main-title{
+        margin-left: 0px;
+        width: 46vh;
+    }
+    .row-2 .main-title .header{
+        font-size: 5vh;
+    }
+    .row-2 .main-title .description{
+        font-size: /*18px*/2vh;
+    }
+    .order-release-section{
+        height:6vh;
+    }
+    .row-2 .Button1{
+        font-size: 1.3vh;
+    }
+    .order-release-section #release-date{
+        font-size: 1.5vh;
+        font-weight: 501;
     }
     .row-2 .first-keyboard-container{
         background-image: url("assets/tablet/image-keyboard.jpg");
         margin-right: -80px;
+        height: 50vh;
+        background-size: cover;
+        background-position:left;
     }
     .row-3{
         display: flex;
@@ -307,7 +346,7 @@ h3{
     .row-3 .two-keyboards{
         flex-direction: row;
         width: 100%;
-        height: 30vh;
+        height: 60vh;
         padding-right: 0px;
         padding-left: 0px;
     }
@@ -315,11 +354,21 @@ h3{
         flex-direction: row;
         width:100%;
     }
-    .row-3 .sub-title .description{
+    .row-3 .sub-title h2{
         margin: auto;
     }
+    .row-3 .sub-title .description{
+        margin: auto;
+        font-size: 1.7vh;
+    }
     .row-4{
-        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+    }
+    .row-4 .features .description{
+        font-size: 1.7vh;
+        padding-right: 10px;
+        width: 33vh;
     }
     .row-4 .compatible-bluetooth{
         display: flex;
@@ -330,12 +379,36 @@ h3{
     }
     .row-3 #phone-and-keyboard{
         background-image: linear-gradient(rgba(230, 93, 15, 0.9), rgba(248, 91, 0, 0.5)), url("assets/tablet/image-phone-and-keyboard.jpg");
+        background-position: left;
     }
     .row-3 #glass-and-keyboard{
         background-image: url("assets/tablet/image-glass-and-keyboard.jpg");
+        background-position: left;
     }
 }
-@media screen and (max-width:480px) {
+
+@media screen and (max-width:1024px) and (max-height:600px) {
+    #main{
+        border: 2px solid;
+        padding: 30px;
+    }
+    .row-4{
+        display: flex;
+        flex-direction: row;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin: auto;
+        font-size: 24px;
+    }
+    .row-3 .sub-title .description{
+        font-size: 2vh;
+        width:40%;
+    }
+    .row-4 .battery-light{
+        margin-left: 0px;
+    }
+}
+@media screen and (max-width:680px) {
     #main{
         overflow-x: hidden;
     }
@@ -347,14 +420,16 @@ h3{
     }
     .row-1{
         margin-bottom: 70px;
+        height: 6vh;
     }
     .row-1 #TM-logo{
-        width: 10%;
+        width: 20%;
         height:auto;
     }
     .row-1 .Button2{
-        height: auto;
         width: 40%;
+        font-weight:500;
+        font-size: 1.6vh;
     }
     .row-2{
         display: flex;
@@ -366,14 +441,27 @@ h3{
         width: 100%;
         height: auto;
     }
+    .row-2 .main-title .header{
+        font-size: 6vh;
+    } 
+    .row-2 .main-title .description{
+        font-size: /*18px*/1.5vh;
+    }
+    .order-release-section{
+        height:5vh;
+    }   
     .row-2 .Button1{
-        height: auto;
-        width: 50%;
+        font-size: 1.6vh;
+    }
+    .order-release-section #release-date{
+        font-size: 1.5vh;
+        font-weight: 501;
     }
     .row-2 .first-keyboard-container{
         background-image: url("assets/mobile/image-keyboard.jpg");
         width: 120%;
-        height: 30vh;
+        height: 50vh;
+        margin-top: 40px;
         border-radius: 20px 0px 0px 20px;
     }
     .row-3{
@@ -383,25 +471,26 @@ h3{
     .row-3 .two-keyboards{
         display: flex;
         flex-direction: row;
-        width: 140%;
-        margin-right: -20px;
+        width: 100%;
+        height: 40vh;
+        margin-right: 10px;
     }
     .row-3 .sub-title{
         width:100%;
         text-align: center;
     }
     .row-3 #phone-and-keyboard{
-        width: 40%;
+        width: 70%;
         height: 100%;
         background-image: linear-gradient(rgba(230, 93, 15, 0.9), rgba(248, 91, 0, 0.5)), url("assets/mobile/image-phone-and-keyboard.jpg");
-        margin-left: -30px;
+        margin-left: -20px;
         border-radius: 0px 20px 20px 0px;
     }
     .row-3 #glass-and-keyboard{
         height: 100%;
         width: 90%;
-        margin-left: 40px;
-        border-radius: 20px 0px 0px 20px;
+        margin-left: 10px;
+        border-radius: 20px 20px 20px 20px;
         background-image: url("assets/mobile/image-glass-and-keyboard.jpg");
     }
     .row-3 .sub-title{
@@ -417,6 +506,15 @@ h3{
         justify-content: space-between;
         text-align: center;
         margin-bottom: 50px;
+    }
+    .row-4 .svg-image{
+        margin: auto;
+    }
+    .row-4 .svg-image .svg--image{
+        width:20%;
+    }
+    .row-4 .features .description{
+        margin: auto;
     }
     .row-4 .compatible-bluetooth{
         display: flex;
