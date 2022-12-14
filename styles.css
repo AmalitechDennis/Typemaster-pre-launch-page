@@ -237,7 +237,6 @@ h3{
     padding-right: 10px;
     display: flex;
     flex-direction: column;
-    border: 2px solid;
 }
 .row-4 .svg-image{
     display: flex;
@@ -264,7 +263,6 @@ h3{
     color: #7B8BAD;
     padding-top: 20px;
     padding-right: 10px;
-    border: 2px solid;
 }
 .footer{
     display: flex;
