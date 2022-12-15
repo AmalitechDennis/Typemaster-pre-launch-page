@@ -444,6 +444,7 @@ h3{
     } 
     .row-2 .main-title .description{
         font-size: /*18px*/1.5vh;
+        width:30vh;
     }
     .order-release-section{
         height:5vh;
