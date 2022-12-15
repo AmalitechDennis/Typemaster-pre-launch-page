@@ -221,18 +221,23 @@ h3{
 .row-4{
     display: flex;
     flex-direction: row;
-    margin: auto;
+    /* margin: auto; */
     margin-top: 50px;
     margin-bottom: 50px;
+    justify-content: space-between;
 }
 .row-4 .compatible-bluetooth{
     display: flex;
     flex-direction: row;
     margin-bottom: 50px;
+    justify-content: space-between;
+    width:80vh;
 }
 .row-4 .battery-light{
     display: flex;
     flex-direction: row;
+    width:80vh;
+    justify-content: space-between;
 }
 .row-4 .features{
     padding: 10px;
@@ -278,7 +283,7 @@ h3{
     color: #7B8BAD;
     text-align: center;
 }
-@media screen and (max-width:1024px) {
+@media screen and (max-width:900px) {
     #main{
         overflow: hidden; 
     }
@@ -369,19 +374,23 @@ h3{
     .row-4{
         display: flex;
         flex-direction: column;
-        margin: auto;
+        /* margin: auto; */
     }
     .row-4 .features .description{
         font-size: 1.5vh;
         padding-right: 10px;
-        width: 30vh;
+        width: 28vh;
     }
     .row-4 .compatible-bluetooth{
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
+        width:60vh;
     }
     .row-4 .battery-light{
         flex-direction: row;
+        justify-content: space-between;
+        width:60vh;
     }
     .row-3 #phone-and-keyboard{
         background-image: linear-gradient(rgba(230, 93, 15, 0.9), rgba(248, 91, 0, 0.5)), url("assets/tablet/image-phone-and-keyboard.jpg");
@@ -526,9 +535,11 @@ h3{
     .row-4 .compatible-bluetooth{
         display: flex;
         flex-direction: column;
+        width:40vh;
     }
     .row-4 .battery-light{
         display: flex;
         flex-direction: column;
+        width:40vh;
     }
 }
