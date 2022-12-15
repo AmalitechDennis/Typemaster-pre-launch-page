@@ -216,10 +216,12 @@ h3{
     line-height: 26px;
     color: #7B8BAD;
     padding: 10px;
+    width:33vh;
 }
 .row-4{
     display: flex;
     flex-direction: row;
+    margin: auto;
     margin-top: 50px;
     margin-bottom: 50px;
 }
@@ -257,13 +259,13 @@ h3{
 .row-4 .description{
     display: flex;
     font-family:  Barlow;
-    font-size: /*16px 2vh*/ 120%;
+    font-size: /*16px */2vh ;
     font-weight: 500;
     line-height: 26px;
     color: #7B8BAD;
     padding-top: 20px;
     padding-right: 10px;
-    width:33vh;
+    width:32vh;
 }
 .footer{
     display: flex;
@@ -316,7 +318,8 @@ h3{
         font-size: 5vh;
     }
     .row-2 .main-title .description{
-        font-size: /*18px*/2vh;
+        font-size: /*18px*/1.2vh;
+        width:30vh;
     }
     .order-release-section{
         height:6vh;
@@ -330,8 +333,10 @@ h3{
     }
     .row-2 .first-keyboard-container{
         background-image: url("assets/tablet/image-keyboard.jpg");
-        margin-right: -80px;
+        margin-right: -20px;
         height: 50vh;
+        width:50vh;
+        border-radius: 30px 0px 0px 30px;
         background-size: cover;
         background-position:left;
     }
@@ -358,16 +363,18 @@ h3{
     }
     .row-3 .sub-title .description{
         margin: auto;
-        font-size: 1.7vh;
+        font-size: 1.3vh;
+        width:31vh;
     }
     .row-4{
         display: flex;
         flex-direction: column;
+        margin: auto;
     }
     .row-4 .features .description{
-        font-size: 2vh;
+        font-size: 1.5vh;
         padding-right: 10px;
-        width: 33vh;
+        width: 30vh;
     }
     .row-4 .compatible-bluetooth{
         display: flex;
@@ -386,7 +393,7 @@ h3{
     }
 }
 
-@media screen and (max-width:1024px) and (max-height:600px) {
+/* @media screen and (max-width:1024px) and (max-height:600px) {
     #main{
         padding: 30px;
     }
@@ -405,7 +412,7 @@ h3{
     .row-4 .battery-light{
         margin-left: 0px;
     }
-}
+} */
 @media screen and (max-width:680px) {
     #main{
         overflow-x: hidden;
@@ -418,14 +425,14 @@ h3{
     }
     .row-1{
         margin-bottom: 70px;
-        height: 6vh;
+        height: 5vh;
     }
     .row-1 #TM-logo{
-        width: 20%;
+        width: 5vh;
         height:auto;
     }
     .row-1 .Button2{
-        width: 40%;
+        width:16vh;
         font-weight:500;
         font-size: 1.6vh;
     }
@@ -451,6 +458,7 @@ h3{
     }   
     .row-2 .Button1{
         font-size: 1.6vh;
+        width:16vh;
     }
     .order-release-section #release-date{
         font-size: 1.5vh;
@@ -510,7 +518,7 @@ h3{
         margin: auto;
     }
     .row-4 .svg-image .svg--image{
-        width:20%;
+        width:40%;
     }
     .row-4 .features .description{
         margin: auto;
