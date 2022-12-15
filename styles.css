@@ -221,7 +221,7 @@ h3{
 .row-4{
     display: flex;
     flex-direction: row;
-    /* margin: auto; */
+    margin: auto;
     margin-top: 50px;
     margin-bottom: 50px;
     justify-content: space-between;
@@ -283,7 +283,70 @@ h3{
     color: #7B8BAD;
     text-align: center;
 }
-@media screen and (max-width:920px) {
+/* @media  screen and (max-width:1024px) {
+    #main{
+        overflow:hidden; 
+        /* width: 100vh; 
+    }
+    .col-1 #grey-section-on-left{
+        display: none;
+     }
+     .col-3 #grey-section-on-right{
+        display: none;
+    }
+    .row-1{
+        /* width:60vh; 
+    }
+    .row-2 .main-title .header{
+        font-size: 5vh;
+    }
+    .row-2 .main-title .description{
+        font-size: ;
+    }
+    .row-3{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+        width: 100%;
+        height:auto;
+    }
+    .row-3 .sub-title{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        margin-left: -20px;
+        padding-left: 0px;
+        width:60vh;
+        border: 2px solid;
+        /* margin: auto; 
+    }
+    .row-3 .sub-title h2{
+        margin: auto;
+    }
+    .row-3 .sub-title .description{
+        margin: auto;
+        font-size: 1.3vh;
+        width:31vh;
+    }
+    .row-4{
+        display: flex;
+        flex-direction: column;
+        /* margin: auto; 
+    }
+    .row-4 .compatible-bluetooth{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width:60vh;
+    }
+    .row-4 .battery-light{
+        flex-direction: row;
+        justify-content: space-between;
+        width:60vh;
+    }
+    
+} */
+@media screen and (max-width:1024px) {
     #main{
         overflow: hidden; 
     }
